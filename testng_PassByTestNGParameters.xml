@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PassByTestNGParameters">
+
+	<parameter name="username" value="username" />
+    <parameter name="password" value="password" />
+	<test thread-count="2" name="test" parallel="classes"> 
+		<classes>
+			<class name="com.automation.testng.parameterization.PassByTestNGParameters" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
